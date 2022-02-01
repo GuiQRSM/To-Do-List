@@ -15,7 +15,13 @@ class _MainFrameState extends State<MainFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+        title: Text(
+            "To do List",
+        style: TextStyle(
+          fontWeight: FontWeight.w700,
+        ),
+        ),
+        backgroundColor: mainColor,
       ),
     );
   }
