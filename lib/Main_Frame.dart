@@ -8,6 +8,9 @@ class MainFrame extends StatefulWidget {
 }
 
 class _MainFrameState extends State<MainFrame> {
+
+  var mainColor = Color.fromARGB(224, 123, 57, 0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold();
