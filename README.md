@@ -1,4 +1,4 @@
-# project_packages
+# To_Do_List
 
 Mobile application that provides a list of tasks for organizing daily schedules, using the resources of the 'shared_preferences' dependency, which makes it possible to save data directly on the user's device.
 
