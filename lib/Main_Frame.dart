@@ -23,6 +23,17 @@ class _MainFrameState extends State<MainFrame> {
         ),
         backgroundColor: mainColor,
       ),
+      body: Container(
+        width: double.infinity,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            children: <Widget>[
+
+            ],
+          ),
+        ),
+      )
     );
   }
 }
