@@ -37,7 +37,7 @@ class _MainFrameState extends State<MainFrame> {
           ),
         ),
       ),
-      floatingActionButtonLocation: ,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
         child: Icon(
           Icons.add_rounded,
