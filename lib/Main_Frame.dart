@@ -34,7 +34,14 @@ class _MainFrameState extends State<MainFrame> {
           ),
         ),
       ),
-      floatingActionButton: ,
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          Icons.add_rounded,
+          color: Colors.white,
+        ),
+        backgroundColor: mainColor,
+        onPressed: (){},
+      ),
     );
   }
 }
