@@ -42,7 +42,8 @@ class _MainFrameState extends State<MainFrame> {
           Icons.add_rounded,
           color: secColor,
         ),
-        elevation: 9.0,
+        elevation: 15,
+        mini: false,
         backgroundColor: mainColor,
         onPressed: (){
         },
