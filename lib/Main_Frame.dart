@@ -10,11 +10,12 @@ class MainFrame extends StatefulWidget {
 class _MainFrameState extends State<MainFrame> {
 
   var mainColor = Color.fromARGB(224, 123, 57, 0);
-  var secColor = Color.fromARGB(223, 190, 159, 1);
+  var secColor = Color.fromARGB(255, 179, 128, 0);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: secColor,
       appBar: AppBar(
         title: Text(
             "To do List",
