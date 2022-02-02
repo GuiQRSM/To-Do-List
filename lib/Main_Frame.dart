@@ -38,13 +38,19 @@ class _MainFrameState extends State<MainFrame> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-      floatingActionButton: FloatingActionButton(
-        child: Icon(
+      floatingActionButton: FloatingActionButton.extended(
+        icon: Icon(
           Icons.add_rounded,
-          color: secColor,
         ),
+        label: Text(
+            "adicionar",
+        style: TextStyle(
+          fontWeight: FontWeight.w500,
+          fontSize: 18,
+        ),
+        ),
+        foregroundColor: secColor,
         elevation: 15,
-        mini: false,
         backgroundColor: mainColor,
         onPressed: (){
         },
