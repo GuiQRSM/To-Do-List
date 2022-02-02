@@ -40,7 +40,7 @@ class _MainFrameState extends State<MainFrame> {
       floatingActionButton: FloatingActionButton(
         child: Icon(
           Icons.add_rounded,
-          color: Colors.white,
+          color: secColor,
         ),
         backgroundColor: mainColor,
         onPressed: (){
