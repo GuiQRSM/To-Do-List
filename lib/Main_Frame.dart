@@ -10,6 +10,7 @@ class MainFrame extends StatefulWidget {
 class _MainFrameState extends State<MainFrame> {
 
   var mainColor = Color.fromARGB(224, 123, 57, 0);
+  var secColor = Color.fromARGB(198, 140, 83, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +41,8 @@ class _MainFrameState extends State<MainFrame> {
           color: Colors.white,
         ),
         backgroundColor: mainColor,
-        onPressed: (){},
+        onPressed: (){
+        },
       ),
     );
   }
