@@ -10,7 +10,7 @@ class MainFrame extends StatefulWidget {
 class _MainFrameState extends State<MainFrame> {
 
   var mainColor = Color.fromARGB(224, 123, 57, 0);
-  var secColor = Color.fromARGB(198, 140, 83, 1);
+  var secColor = Color.fromARGB(223, 190, 159, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +20,7 @@ class _MainFrameState extends State<MainFrame> {
             "To do List",
         style: TextStyle(
           fontWeight: FontWeight.w700,
+          color: secColor,
         ),
         ),
         backgroundColor: mainColor,
