@@ -12,7 +12,7 @@ class _MainFrameState extends State<MainFrame> {
   var mainColor = Color.fromARGB(224, 123, 57, 0);
   var secColor = Color.fromARGB(255, 179, 128, 0);
 
-  List<String> _item = ["Test1", "Test2", "Test3"];
+  List _item = ["Test1", "Test2", "Test3"];
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,24 @@ class _MainFrameState extends State<MainFrame> {
         width: double.infinity,
         child: Column(
           children: <Widget>[
-            Expanded(child: child),
+            Expanded(
+                child: ListView.builder(
+                    itemBuilder: (context, index){
+
+                      return ListTile(
+                        title: Text(
+                          "${index.toString()}",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600
+                          ),
+                        ),
+                      );
+
+                    },
+                  itemCount: _item.length,
+                ),
+            ),
           ],
         ),
       ),
