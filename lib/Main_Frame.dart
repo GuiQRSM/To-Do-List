@@ -30,12 +30,7 @@ class _MainFrameState extends State<MainFrame> {
         width: double.infinity,
         child: SingleChildScrollView(
           padding: EdgeInsets.all(16),
-          child: Column(
-            children: <Widget>[
-
-            ],
-          ),
-        ),
+          //child:,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton.extended(
