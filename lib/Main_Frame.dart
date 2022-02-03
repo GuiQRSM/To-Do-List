@@ -71,7 +71,50 @@ class _MainFrameState extends State<MainFrame> {
            builder: (context){
 
            return AlertDialog(
-
+             backgroundColor: secColor,
+             title: Text(
+                 "Adicionar Tarefas",
+             style: TextStyle(
+               color: mainColor,
+               fontSize: 22,
+             ),
+             ),
+             content: TextField(
+               decoration: InputDecoration(
+                 label: Text(
+                     "Descrição da tarefa:",
+                 ),
+                 labelStyle: TextStyle(
+                   color: mainColor,
+                   fontSize: 18,
+                   fontWeight: FontWeight.w600,
+                 ),
+               ),
+             ),
+             actions: <Widget>[
+               FlatButton(
+                 color: mainColor,
+                   onPressed: () => Navigator.pop(context),
+                   child: Text(
+                       "Cancelar",
+                     style: TextStyle(
+                       color: secColor,
+                       fontSize: 14,
+                     ),
+                   ),
+               ),
+               FlatButton(
+                 color: mainColor,
+                 onPressed: () => Navigator.pop(context),
+                 child: Text(
+                   "Salvar",
+                   style: TextStyle(
+                     color: secColor,
+                     fontSize: 14,
+                   ),
+                 ),
+               ),
+             ],
            );
 
            },
