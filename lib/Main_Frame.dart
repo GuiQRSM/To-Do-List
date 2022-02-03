@@ -11,6 +11,7 @@ class _MainFrameState extends State<MainFrame> {
 
   var mainColor = Color.fromARGB(224, 123, 57, 0);
   var secColor = Color.fromARGB(255, 179, 128, 0);
+  var _itemIndex = 3;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class _MainFrameState extends State<MainFrame> {
         child: SingleChildScrollView(
           padding: EdgeInsets.all(16),
           child: ListView.builder(
-    itemCount: ,
+    itemCount: _itemIndex.bitLength,
     itemBuilder: (context, index) {},
     ),
       ),
