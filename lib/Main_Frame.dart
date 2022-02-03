@@ -68,7 +68,13 @@ class _MainFrameState extends State<MainFrame> {
         onPressed: (){
 
          showDialog(context: context,
-           builder: (){},
+           builder: (context){
+
+           return AlertDialog(
+
+           );
+
+           },
          );
 
         },
