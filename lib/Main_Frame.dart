@@ -13,7 +13,7 @@ class _MainFrameState extends State<MainFrame> {
   var secColor = Color.fromARGB(255, 179, 128, 0);
 
   List _item = [];
-  getItem() {
+  _getItem() {
 
     for(int i = 0; i >= 20; i++){
 
@@ -27,6 +27,9 @@ class _MainFrameState extends State<MainFrame> {
 
   @override
   Widget build(BuildContext context) {
+
+    _getItem();
+
     return Scaffold(
       backgroundColor: secColor,
       appBar: AppBar(
@@ -44,7 +47,7 @@ class _MainFrameState extends State<MainFrame> {
         child: SingleChildScrollView(
           padding: EdgeInsets.all(16),
           child: ListView.builder(
-    itemCount: _indexItem.length,
+    itemCount: _item.length,
     itemBuilder: (context, index) {
 
       return ListTile(
