@@ -14,6 +14,7 @@ class _MainFrameState extends State<MainFrame> {
 
   List _item = ["Test1", "Test2", "Test3"];
 
+
   @override
   Widget build(BuildContext context) {
 
@@ -40,10 +41,11 @@ class _MainFrameState extends State<MainFrame> {
 
                       return ListTile(
                         title: Text(
-                          "${index.toString()}",
+                          "${_item[index].toString()}",
                           style: TextStyle(
                             fontSize: 20,
-                            fontWeight: FontWeight.w600
+                            fontWeight: FontWeight.w600,
+                            color: mainColor,
                           ),
                         ),
                       );
@@ -55,7 +57,7 @@ class _MainFrameState extends State<MainFrame> {
           ],
         ),
       ),
-      /*floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton.extended(
         icon: Icon(
           Icons.add_rounded,
@@ -72,7 +74,7 @@ class _MainFrameState extends State<MainFrame> {
         backgroundColor: mainColor,
         onPressed: (){
         },
-      ),*/
+      ),
      );
   }
 }
