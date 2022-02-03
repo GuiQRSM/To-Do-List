@@ -12,23 +12,10 @@ class _MainFrameState extends State<MainFrame> {
   var mainColor = Color.fromARGB(224, 123, 57, 0);
   var secColor = Color.fromARGB(255, 179, 128, 0);
 
-  List _item = [];
-  _getItem() {
-
-    for(int i = 0; i >= 20; i++){
-
-      Map<String, dynamic> bodyItem = Map();
-      bodyItem ["content"] = "teste: ${i} ";
-      _item.add(bodyItem);
-
-    }
-
-  }
+  List<String> _item = ["Test1", "Test2", "Test3"];
 
   @override
   Widget build(BuildContext context) {
-
-    _getItem();
 
     return Scaffold(
       backgroundColor: secColor,
@@ -43,19 +30,13 @@ class _MainFrameState extends State<MainFrame> {
         backgroundColor: mainColor,
       ),
       body: Container(
+        padding: EdgeInsets.all(12),
         width: double.infinity,
-        child: SingleChildScrollView(
-          padding: EdgeInsets.all(16),
-          child: ListView.builder(
-    itemCount: _item.length,
-    itemBuilder: (context, index) {
-
-      return ListTile(
-        title: Text("${index.toString()}"),
-      );
-
-    },
-    ),
+        child: Column(
+          children: <Widget>[
+            Expanded(child: child),
+          ],
+        ),
       ),
       /*floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton.extended(
@@ -75,7 +56,6 @@ class _MainFrameState extends State<MainFrame> {
         onPressed: (){
         },
       ),*/
-     ),
-    );
+     );
   }
 }
