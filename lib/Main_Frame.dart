@@ -16,12 +16,18 @@ class _MainFrameState extends State<MainFrame> {
   var mainColor = Color.fromARGB(224, 123, 57, 0);
   var secColor = Color.fromARGB(255, 179, 128, 0);
 
-  List _item = ["Test1", "Test2", "Test3"];
+  List _item = [];
 
   _saveFile() async {
 
     final dataDirectory = await getApplicationDocumentsDirectory();
     var retainFile = File("${dataDirectory.path}/myData.json");
+
+    //CREATE TASKS
+    Map<String, dynamic> task = Map();
+    task["title"] = "Go to the market";
+    task["check"] = false;
+    _item.add(task);
 
     String receiveData = json.encode(_item);
     retainFile.writeAsStringSync(receiveData);
