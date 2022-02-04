@@ -19,7 +19,7 @@ class _MainFrameState extends State<MainFrame> {
   _saveFile() async {
 
     final dataDirectory = await getApplicationDocumentsDirectory();
-    return File("${dataDirectory.path}");
+    return File("${dataDirectory.path}/myData.json");
 
   }
 
