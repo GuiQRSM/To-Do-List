@@ -80,6 +80,7 @@ class _MainFrameState extends State<MainFrame> {
              ),
              ),
              content: TextField(
+               cursorColor: mainColor,
                decoration: InputDecoration(
                  label: Text(
                      "Descrição da tarefa:",
