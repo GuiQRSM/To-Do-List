@@ -23,7 +23,8 @@ class _MainFrameState extends State<MainFrame> {
     final dataDirectory = await getApplicationDocumentsDirectory();
     var retainFile = File("${dataDirectory.path}/myData.json");
 
-    retainFile.writeAsStringSync(contents);
+    String receiveData = json.encode(_item);
+    retainFile.writeAsStringSync(receiveData);
 
   }
 
