@@ -80,6 +80,11 @@ class _MainFrameState extends State<MainFrame> {
              ),
              ),
              content: TextField(
+               style: TextStyle(
+                 color: mainColor,
+                 fontSize: 18,
+                 fontWeight: FontWeight.w600,
+               ),
                cursorColor: mainColor,
                decoration: InputDecoration(
                  label: Text(
