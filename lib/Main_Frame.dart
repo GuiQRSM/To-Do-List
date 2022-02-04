@@ -30,7 +30,7 @@ class _MainFrameState extends State<MainFrame> {
     _item.add(task);
 
     String receiveData = json.encode(_item);
-    retainFile.writeAsStringSync(receiveData);
+    retainFile.writeAsString(receiveData);
 
   }
 
