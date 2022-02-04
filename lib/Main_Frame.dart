@@ -95,6 +95,11 @@ class _MainFrameState extends State<MainFrame> {
                    fontSize: 18,
                    fontWeight: FontWeight.w600,
                  ),
+                 enabledBorder: UnderlineInputBorder(
+                   borderSide: BorderSide(
+                     color: mainColor,
+                   ),
+                 ),
                ),
              ),
              actions: <Widget>[
