@@ -100,6 +100,11 @@ class _MainFrameState extends State<MainFrame> {
                      color: mainColor,
                    ),
                  ),
+                 focusedBorder: UnderlineInputBorder(
+                   borderSide: BorderSide(
+                     color: mainColor,
+                   ),
+                 ),
                ),
              ),
              actions: <Widget>[
