@@ -44,6 +44,8 @@ class _MainFrameState extends State<MainFrame> {
 
     try{
 
+      final archiveFile = await _getFile();
+
     }catch(e){
       return null;
     }
