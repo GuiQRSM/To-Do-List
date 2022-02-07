@@ -18,7 +18,7 @@ class _MainFrameState extends State<MainFrame> {
 
   List _item = [];
 
-  _getFile() async {
+  Future<File> _getFile() async {
 
     final dataDirectory = await getApplicationDocumentsDirectory();
     return File("${dataDirectory.path}/myData.json");
