@@ -21,7 +21,7 @@ class _MainFrameState extends State<MainFrame> {
   _getFile() async {
 
     final dataDirectory = await getApplicationDocumentsDirectory();
-    var retainFile = File("${dataDirectory.path}/myData.json");
+    return File("${dataDirectory.path}/myData.json");
 
   }
 
@@ -33,8 +33,10 @@ class _MainFrameState extends State<MainFrame> {
     task["check"] = false;
     _item.add(task);
 
+    var receiverFile = await _getFile();
+
     String receiveData = json.encode(_item);
-    retainFile.writeAsString(receiveData);
+    receiverFile.writeAsString(receiveData);
 
   }
 
