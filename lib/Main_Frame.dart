@@ -18,10 +18,14 @@ class _MainFrameState extends State<MainFrame> {
 
   List _item = [];
 
-  _saveFile() async {
+  _getFile() async {
 
     final dataDirectory = await getApplicationDocumentsDirectory();
     var retainFile = File("${dataDirectory.path}/myData.json");
+
+  }
+
+  _saveFile() async {
 
     //CREATE TASKS
     Map<String, dynamic> task = Map();
