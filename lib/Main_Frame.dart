@@ -45,7 +45,7 @@ class _MainFrameState extends State<MainFrame> {
     try{
 
       final archiveFile = await _getFile();
-      archiveFile.readAsString();
+     return archiveFile.readAsString();
 
     }catch(e){
       return null;
@@ -70,6 +70,8 @@ class _MainFrameState extends State<MainFrame> {
   @override
   Widget build(BuildContext context) {
 
+    print("ItemTask: ${_item.toString()}");
+
     return Scaffold(
       backgroundColor: secColor,
       appBar: AppBar(
@@ -93,9 +95,17 @@ class _MainFrameState extends State<MainFrame> {
 
                       return ListTile(
                         title: Text(
-                          "${_item[index].toString()}",
+                          "${_item[index] ['title'].toString()}",
                           style: TextStyle(
                             fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                            color: mainColor,
+                          ),
+                        ),
+                        subtitle: Text(
+                          "${_item[index]['check'].toString()}",
+                          style: TextStyle(
+                            fontSize: 17,
                             fontWeight: FontWeight.w600,
                             color: mainColor,
                           ),
