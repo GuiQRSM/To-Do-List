@@ -42,6 +42,12 @@ class _MainFrameState extends State<MainFrame> {
 
   _readFile() async {
 
+    try{
+
+    }catch(e){
+      return null;
+    }
+
   }
 
   @override
