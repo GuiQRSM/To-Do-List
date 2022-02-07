@@ -45,10 +45,25 @@ class _MainFrameState extends State<MainFrame> {
     try{
 
       final archiveFile = await _getFile();
+      archiveFile.readAsString();
 
     }catch(e){
       return null;
     }
+
+  }
+
+  @override
+  void initState() {
+    super.initState();
+
+   _readFile().then(
+       (data){
+         setState(() {
+           _item = json.decode(data);
+         });
+       }
+   );
 
   }
 
