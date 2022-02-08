@@ -21,7 +21,7 @@ class _MainFrameState extends State<MainFrame> {
   Future<File> _getFile() async {
 
     final dataDirectory = await getApplicationDocumentsDirectory();
-    return File("${dataDirectory.path}/myData.json");
+    return File("${dataDirectory.path}");
 
   }
 
@@ -70,7 +70,8 @@ class _MainFrameState extends State<MainFrame> {
   @override
   Widget build(BuildContext context) {
 
-    print("ItemTask: ${_item.toString()}");
+    _saveFile();
+   // print("ItemTask: ${_item.toString()}");
 
     return Scaffold(
       backgroundColor: secColor,
