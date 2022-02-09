@@ -26,6 +26,12 @@ class _MainFrameState extends State<MainFrame> {
 
   }
 
+  _saveTask() {
+
+    String receiverText = _contentController.text;
+
+  }
+
   _saveFile() async {
 
     //CREATE TASKS
