@@ -170,6 +170,7 @@ class _MainFrameState extends State<MainFrame> {
                    ),
                  ),
                ),
+               controller: _contentController,
              ),
              actions: <Widget>[
                FlatButton(
