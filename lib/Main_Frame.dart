@@ -34,6 +34,7 @@ class _MainFrameState extends State<MainFrame> {
     Map<String, dynamic> task = Map();
     task["title"] = receiverText;
     task["check"] = false;
+
     _item.add(task);
 
     _saveFile();
@@ -194,7 +195,10 @@ class _MainFrameState extends State<MainFrame> {
                ),
                FlatButton(
                  color: mainColor,
-                 onPressed: () => Navigator.pop(context),
+                 onPressed: (){
+                   _saveTask();
+                   Navigator.pop(context);
+                 },
                  child: Text(
                    "Salvar",
                    style: TextStyle(
