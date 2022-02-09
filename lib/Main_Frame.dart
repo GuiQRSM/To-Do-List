@@ -35,7 +35,10 @@ class _MainFrameState extends State<MainFrame> {
     task["title"] = receiverText;
     task["check"] = false;
 
-    _item.add(task);
+    setState(() {
+      _item.add(task);
+    });
+
 
     _saveFile();
 
