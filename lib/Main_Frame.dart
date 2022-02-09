@@ -121,7 +121,7 @@ class _MainFrameState extends State<MainFrame> {
                             setState(() {
                               _item[index]['check'] = vlr!;
                             });
-                            //print("valor alterado!");
+                            _saveFile();
                           },
                           activeColor: mainColor,
                       );
