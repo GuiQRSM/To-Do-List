@@ -41,6 +41,7 @@ class _MainFrameState extends State<MainFrame> {
 
 
     _saveFile();
+    _contentController.text= "";
 
   }
 
