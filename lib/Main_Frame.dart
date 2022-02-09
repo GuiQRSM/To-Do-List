@@ -21,7 +21,7 @@ class _MainFrameState extends State<MainFrame> {
   Future<File> _getFile() async {
 
     final dataDirectory = await getApplicationDocumentsDirectory();
-    return File("${dataDirectory.path}");
+    return File("${dataDirectory.path}/data.json");
 
   }
 
@@ -58,9 +58,9 @@ class _MainFrameState extends State<MainFrame> {
     super.initState();
 
    _readFile().then(
-       (data){
+       (receiverData){
          setState(() {
-           _item = json.decode(data);
+           _item = json.decode(receiverData);
          });
        }
    );
@@ -70,8 +70,8 @@ class _MainFrameState extends State<MainFrame> {
   @override
   Widget build(BuildContext context) {
 
-    _saveFile();
-   // print("ItemTask: ${_item.toString()}");
+    //_saveFile();
+   print("ItemTask: ${_item.toString()}");
 
     return Scaffold(
       backgroundColor: secColor,
@@ -96,7 +96,7 @@ class _MainFrameState extends State<MainFrame> {
 
                       return ListTile(
                         title: Text(
-                          "${_item[index] ['title'].toString()}",
+                          _item[index]['title'],
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w600,
@@ -104,7 +104,7 @@ class _MainFrameState extends State<MainFrame> {
                           ),
                         ),
                         subtitle: Text(
-                          "${_item[index]['check'].toString()}",
+                          _item[index]['check'].toString(),
                           style: TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w600,
