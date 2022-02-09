@@ -36,6 +36,8 @@ class _MainFrameState extends State<MainFrame> {
     task["check"] = false;
     _item.add(task);
 
+    _saveFile();
+
   }
 
   _saveFile() async {
