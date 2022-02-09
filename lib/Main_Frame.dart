@@ -30,15 +30,15 @@ class _MainFrameState extends State<MainFrame> {
 
     String receiverText = _contentController.text;
 
+    //CREATE TASKS
+    Map<String, dynamic> task = Map();
+    task["title"] = receiverText;
+    task["check"] = false;
+    _item.add(task);
+
   }
 
   _saveFile() async {
-
-    //CREATE TASKS
-    Map<String, dynamic> task = Map();
-    task["title"] = "Go to the market";
-    task["check"] = false;
-    _item.add(task);
 
     var receiverFile = await _getFile();
 
