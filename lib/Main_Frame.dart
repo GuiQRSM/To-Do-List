@@ -108,6 +108,25 @@ class _MainFrameState extends State<MainFrame> {
                 child: ListView.builder(
                     itemBuilder: (context, index){
 
+                      return CheckboxListTile(
+                          title: Text(
+                              _item[index]['title'],
+                          style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          color: mainColor,
+                          ),),
+                          value: _item[index]['check'],
+                          onChanged: (bool? vlr){
+                            setState(() {
+                              _item[index]['check'] = vlr!;
+                            });
+                            //print("valor alterado!");
+                          },
+                          activeColor: mainColor,
+                      );
+
+                      /*
                       return ListTile(
                         title: Text(
                           _item[index]['title'],
@@ -125,7 +144,7 @@ class _MainFrameState extends State<MainFrame> {
                             color: mainColor,
                           ),
                         ),
-                      );
+                      );*/
 
                     },
                   itemCount: _item.length,
