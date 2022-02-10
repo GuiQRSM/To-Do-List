@@ -84,9 +84,6 @@ class _MainFrameState extends State<MainFrame> {
   @override
   Widget build(BuildContext context) {
 
-    //_saveFile();
-   print("ItemTask: ${_item.toString()}");
-
     return Scaffold(
       backgroundColor: secColor,
       appBar: AppBar(
