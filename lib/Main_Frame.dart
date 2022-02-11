@@ -104,6 +104,9 @@ class _MainFrameState extends State<MainFrame> {
           },
           activeColor: mainColor,
         ),
+      onDismissed: (direction){
+
+      },
       background: Container(
         color: Colors.red,
         padding: EdgeInsets.all(16),
