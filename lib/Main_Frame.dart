@@ -104,6 +104,19 @@ class _MainFrameState extends State<MainFrame> {
           },
           activeColor: mainColor,
         ),
+      background: Container(
+        color: Colors.red,
+        padding: EdgeInsets.all(16),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Icon(
+                Icons.delete_rounded,
+                color: mainColor,
+            ),
+          ],
+        ),
+      ),
       direction: DismissDirection.endToStart,
     );
 
@@ -125,7 +138,6 @@ class _MainFrameState extends State<MainFrame> {
         backgroundColor: mainColor,
       ),
       body: Container(
-        padding: EdgeInsets.all(12),
         width: double.infinity,
         child: Column(
           children: <Widget>[
