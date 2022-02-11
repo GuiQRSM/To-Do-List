@@ -125,32 +125,8 @@ class _MainFrameState extends State<MainFrame> {
           children: <Widget>[
             Expanded(
                 child: ListView.builder(
-                    itemBuilder: (){
-
-
-
-                      /*
-                      return ListTile(
-                        title: Text(
-                          _item[index]['title'],
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w600,
-                            color: mainColor,
-                          ),
-                        ),
-                        subtitle: Text(
-                          _item[index]['check'].toString(),
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.w600,
-                            color: mainColor,
-                          ),
-                        ),
-                      );*/
-
-                    },
-                  itemCount: _item.length,
+                    itemBuilder: _showItems,
+                    itemCount: _item.length,
                 ),
             ),
           ],
