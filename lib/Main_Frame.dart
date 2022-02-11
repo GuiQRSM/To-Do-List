@@ -83,8 +83,10 @@ class _MainFrameState extends State<MainFrame> {
 
   Widget _showItems(context, index) {
 
+    final contentItem = _item[index];
+
     return Dismissible(
-        key: key,
+        key: Key(contentItem),
         child: CheckboxListTile(
           title: Text(
             _item[index]['title'],
