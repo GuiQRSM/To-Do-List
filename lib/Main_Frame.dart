@@ -104,6 +104,7 @@ class _MainFrameState extends State<MainFrame> {
           },
           activeColor: mainColor,
         ),
+      direction: DismissDirection.endToStart,
     );
 
   }
