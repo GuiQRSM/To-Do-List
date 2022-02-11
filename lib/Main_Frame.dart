@@ -83,7 +83,7 @@ class _MainFrameState extends State<MainFrame> {
 
   Widget _showItems(context, index) {
 
-    final contentItem = _item[index];
+    final contentItem = _item[index]['title'];
 
     return Dismissible(
         key: Key(contentItem),
