@@ -106,6 +106,10 @@ class _MainFrameState extends State<MainFrame> {
         ),
       onDismissed: (direction){
 
+          //REMOVE THE TASKS
+        _item.removeAt(index);
+        _saveFile();
+
       },
       background: Container(
         color: Colors.red,
