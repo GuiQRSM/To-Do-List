@@ -81,7 +81,7 @@ class _MainFrameState extends State<MainFrame> {
 
   }
 
-  Widget _showItems() {
+  Widget _showItems(context, index) {
 
     return CheckboxListTile(
       title: Text(
@@ -125,7 +125,7 @@ class _MainFrameState extends State<MainFrame> {
           children: <Widget>[
             Expanded(
                 child: ListView.builder(
-                    itemBuilder: (context, index){
+                    itemBuilder: (){
 
 
 
