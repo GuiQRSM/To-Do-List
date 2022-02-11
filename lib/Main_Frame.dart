@@ -83,22 +83,25 @@ class _MainFrameState extends State<MainFrame> {
 
   Widget _showItems(context, index) {
 
-    return CheckboxListTile(
-      title: Text(
-        _item[index]['title'],
-        style: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.w600,
-          color: mainColor,
-        ),),
-      value: _item[index]['check'],
-      onChanged: (bool? vlr){
-        setState(() {
-          _item[index]['check'] = vlr!;
-        });
-        _saveFile();
-      },
-      activeColor: mainColor,
+    return Dismissible(
+        key: key,
+        child: CheckboxListTile(
+          title: Text(
+            _item[index]['title'],
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
+              color: mainColor,
+            ),),
+          value: _item[index]['check'],
+          onChanged: (bool? vlr){
+            setState(() {
+              _item[index]['check'] = vlr!;
+            });
+            _saveFile();
+          },
+          activeColor: mainColor,
+        ),
     );
 
   }
