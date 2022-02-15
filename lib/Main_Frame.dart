@@ -115,6 +115,7 @@ class _MainFrameState extends State<MainFrame> {
         //SHOW THE SNACKBAR
         final callSnack = SnackBar(
             content: Text("Tarefa deletada!"),
+            backgroundColor: mainColor,
         );
 
         Scaffold.of(context).showSnackBar(callSnack);
