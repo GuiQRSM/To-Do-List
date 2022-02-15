@@ -17,6 +17,7 @@ class _MainFrameState extends State<MainFrame> {
   var secColor = Color.fromARGB(255, 179, 128, 0);
 
   List _item = [];
+  Map<String, dynamic> _recentlyRemoved = Map();
   TextEditingController _contentController = TextEditingController();
 
   Future<File> _getFile() async {
