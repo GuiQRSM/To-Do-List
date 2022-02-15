@@ -113,6 +113,9 @@ class _MainFrameState extends State<MainFrame> {
         _saveFile();
 
         //SHOW THE SNACKBAR
+        final callSnack = SnackBar(
+            content: content,
+        );
 
       },
       background: Container(
