@@ -123,8 +123,11 @@ class _MainFrameState extends State<MainFrame> {
                 label: "Desfazer remoção",
                 onPressed: (){
 
-                  //Undo REMOVAL
-
+                  //INSERT REMOVED ITEM IN THE LIST AGAIN
+                  setState(() {
+                    _item.insert(index, _recentlyRemoved);
+                  });
+                  _saveFile();
 
                 },
             ),
