@@ -106,9 +106,13 @@ class _MainFrameState extends State<MainFrame> {
         ),
       onDismissed: (direction){
 
+          //RECOVERY OF REMOVED ITEMS
+
           //REMOVE THE TASKS
         _item.removeAt(index);
         _saveFile();
+
+        //SHOW THE SNACKBAR
 
       },
       background: Container(
