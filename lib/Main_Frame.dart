@@ -108,6 +108,7 @@ class _MainFrameState extends State<MainFrame> {
       onDismissed: (direction){
 
           //RECOVERY OF REMOVED ITEMS
+        _recentlyRemoved = _item[index];
 
           //REMOVE THE TASKS
         _item.removeAt(index);
