@@ -119,7 +119,12 @@ class _MainFrameState extends State<MainFrame> {
             duration: Duration(seconds: 5),
             action: SnackBarAction(
                 label: "Desfazer remoção",
-                onPressed: (){},
+                onPressed: (){
+
+                  //Undo REMOVAL
+
+
+                },
             ),
         );
 
