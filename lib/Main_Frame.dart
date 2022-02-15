@@ -116,11 +116,18 @@ class _MainFrameState extends State<MainFrame> {
 
         //SHOW THE SNACKBAR
         final callSnack = SnackBar(
-            content: Text("Tarefa deletada!"),
+            content: Text(
+                "Tarefa deletada!",
+                style: TextStyle(
+                  fontSize: 18,
+                  color: secColor,
+                ),
+            ),
             backgroundColor: mainColor,
             duration: Duration(seconds: 5),
             action: SnackBarAction(
                 label: "Desfazer remoção",
+                textColor: Colors.amber,
                 onPressed: (){
 
                   //INSERT REMOVED ITEM IN THE LIST AGAIN
