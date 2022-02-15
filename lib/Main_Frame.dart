@@ -112,7 +112,7 @@ class _MainFrameState extends State<MainFrame> {
 
           //REMOVE THE TASKS
         _item.removeAt(index);
-        //_saveFile();
+        _saveFile();
 
         //SHOW THE SNACKBAR
         final callSnack = SnackBar(
