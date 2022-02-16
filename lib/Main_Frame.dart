@@ -84,8 +84,6 @@ class _MainFrameState extends State<MainFrame> {
 
   Widget _showItems(context, index) {
 
-    //final contentItem = _item[index]['title'];
-
     return Dismissible(
         key: Key(DateTime.now().millisecondsSinceEpoch.toString()),
         child: CheckboxListTile(
